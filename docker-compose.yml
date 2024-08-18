@@ -4,6 +4,10 @@ services:
     build:
       context: .
       dockerfile: ./Dockerfile
+      args:
+        BASE_IMAGE: ubuntu:24.04
+        USE_GPU: false
+        DEBIAN_FRONTEND: noninteractive
     restart: unless-stopped
     networks:
       - nginx-net
