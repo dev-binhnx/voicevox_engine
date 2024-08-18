@@ -8,6 +8,8 @@ services:
         BASE_IMAGE: ubuntu:24.04
         USE_GPU: false
         DEBIAN_FRONTEND: noninteractive
+        TARGETPLATFORM: linux/amd64
+        ONNXRUNTIME_VERSION: 1.19.0
     restart: unless-stopped
     networks:
       - nginx-net
