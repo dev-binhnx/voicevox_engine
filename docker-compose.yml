@@ -13,6 +13,8 @@ services:
     restart: unless-stopped
     ports:
       - 50021:50021 
+    volumes:
+      - ./voicevox_core:/opt/voicevox_core
     networks:
       - nginx-net
 
