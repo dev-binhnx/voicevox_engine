@@ -11,6 +11,8 @@ services:
         TARGETPLATFORM: linux/amd64
         ONNXRUNTIME_VERSION: 1.19.0
     restart: unless-stopped
+    ports:
+      - 50021:50021 
     networks:
       - nginx-net
 
