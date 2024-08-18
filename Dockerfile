@@ -11,7 +11,6 @@ ARG DEBIAN_FRONTEND=noninteractive
 
 WORKDIR /work
 
-
 RUN <<EOF
     set -eux
 
