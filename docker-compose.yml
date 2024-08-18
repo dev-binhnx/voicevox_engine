@@ -1,0 +1,13 @@
+services:
+  app:
+    container_name: media-voicevox-engine
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    restart: unless-stopped
+    networks:
+      - nginx-net
+
+networks:
+  nginx-net:
+    name: nginx-net
